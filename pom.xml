@@ -56,12 +56,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Lombok (para @Data, etc.) -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
