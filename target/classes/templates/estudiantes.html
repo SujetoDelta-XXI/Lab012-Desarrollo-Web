@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Estudiantes</title>
+</head>
+<body>
+<h1>Estudiantes Registrados</h1>
+<a href="/nuevo">Registrar Nuevo</a>
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+        <th>Carrera</th>
+        <th>Acciones</th>
+    </tr>
+    <tr th:each="estudiante : ${estudiantes}">
+        <td th:text="${estudiante.nombre}"></td>
+        <td th:text="${estudiante.apellido}"></td>
+        <td th:text="${estudiante.correo}"></td>
+        <td th:text="${estudiante.carrera}"></td>
+        <td>
+            <a th:href="@{'/editar/' + ${estudiante.id}}">Editar</a>
+            |
+            <a th:href="@{'/eliminar/' + ${estudiante.id}}" onclick="return confirm('¿Seguro de eliminar?')">Eliminar</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

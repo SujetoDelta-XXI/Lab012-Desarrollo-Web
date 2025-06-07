@@ -1,0 +1,6 @@
+com\tecsup\demo\controlador\PersonaControlador.class
+com\tecsup\demo\modelo\Estudiante.class
+com\tecsup\demo\repository\EstudianteRepository.class
+com\tecsup\demo\Semana12Apli01Application.class
+com\tecsup\demo\controlador\EstudianteController.class
+com\tecsup\demo\modelo\Persona.class
